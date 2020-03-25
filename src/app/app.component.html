@@ -1,0 +1,14 @@
+<div class="flex flex-center">
+  <ul>
+    <li *ngFor="let vehicle of objectKeys(vehicles)">
+      {{vehicles[vehicle].name}}
+      <button (click)="vehicles[vehicle].move(); addLog(vehicle);">Move</button>
+      <button (click)="vehicles[vehicle].turn(); addLog(vehicle);">Turn</button>
+    </li>
+  </ul>
+  <ul class="log">
+    <li *ngFor="let log of vehicleLog">
+      {{log}}
+    </li>
+  </ul>
+</div>
