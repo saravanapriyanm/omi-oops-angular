@@ -1,0 +1,28 @@
+ul {
+    list-style:none;
+    padding:0;
+}
+ul li {
+    margin-bottom:.5rem;
+    width:10rem;
+}
+ul li button {
+    float:right;
+    margin-right:.5rem;
+}
+.log {
+    font-family: monospace;
+    color:#cc976a;
+    background-color:#151313;
+}
+.log li {
+    margin:0;
+    padding:.5rem 1rem;
+    width:auto;
+}
+.log li:first-child {
+    padding-top:1rem;
+}
+.log li:last-child {
+    padding-bottom:1rem;
+}

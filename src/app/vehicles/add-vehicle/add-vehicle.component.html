@@ -1,0 +1,11 @@
+<div class="form-horizontal text-center">
+    Add vehicle: 
+    <input type="text" [(ngModel)]="createVehicle.name" placeholder="vehicle name">
+    <select name="vehicleType" [(ngModel)]="createVehicle.type">
+        <option value="">Select Type</option>
+        <option *ngFor="let type of fleetTypes; let i = index" [value]="i">
+            {{type.name}}
+        </option>
+    </select>
+    <button (click)="addVehicle()">Create</button>
+</div>
