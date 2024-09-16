@@ -1,0 +1,14 @@
+<div class="flex flex-center">
+    <ul>
+        <li *ngFor="let vehicle of vehicles; let i = index">
+            {{vehicle.name}}
+            <button (click)="vehicle.move(); addLog(i);">Move</button>
+            <button (click)="vehicle.turn(); addLog(i);">Turn</button>
+        </li>
+    </ul>
+    <ul class="log">
+        <li *ngFor="let log of vehicleLog">
+            {{log}}
+        </li>
+    </ul>
+</div>
